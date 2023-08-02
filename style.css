@@ -219,7 +219,6 @@ main {
 
   @media(max-width : 605px){
     .container{
-      /*flex-direction: column;*/
       height: 100%;
       width : 100%;
       margin-bottom: 40px;
@@ -231,11 +230,13 @@ main {
     .result-container{
       border-top-right-radius: 0;
       border-top-left-radius: 0;
+      display: block;
     }
 
     .summary-container{
       border-bottom-left-radius: 20px;
       border-top-right-radius: 0;
+      float: none;
     }
 
     .sub-container{

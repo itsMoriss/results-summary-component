@@ -13,68 +13,80 @@
   <main>
     <div class="container">
       <div class="result-container">
-        <h2>Your Result</h2>
+        <h2 class="heading">Your Result</h2>
         <div class="circle">
-          <h1>76</h1>
-          <p>of 100</p>
+          <h1 class="percentage">76</h1>
+          <div class="total">
+            <p class="small">of 100</p>
+          </div>
         </div>
-        <h3>Great</h3>
-        <p>You scored higher than 65% of <br> the people who have taken <br>these tests.</p>
+        <div class="comment-wrapper">
+          <h2 class="comment">
+            Great
+          </h2>
+          <p class="comment-summary">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
       </div>
 
       <div class="summary-container">
-        <h2>Summary</h2>
+        <div class="summary-content">
+          <h2 class="title">Summary</h2>
 
-        <div class="sub-container reaction">
-          <div>
-            <img class="icons" src="./assets/images/icon-reaction.svg" alt="reaction-icon">
-            <h3 class="points">Reaction</h3>
+          <div class="summary-wrapper">
+            <div class="sub-container reaction">
+              <div class="summary-title">
+                <img class="icons" src="./assets/images/icon-reaction.svg" alt="reaction-icon">
+                <h3 class="points">Reaction</h3>
+              </div>
+              <div class="summary-score">
+                <h3 class="score">80<span>/100</span></h3>
+              </div>
+            </div>
+    
+            <div class="sub-container memory">
+              <div class="summary-title">
+                <img class="icons" src="./assets/images/icon-memory.svg" alt="memory-icon">
+                <h3 class="points">Memory</h3>
+              </div>
+              <div class="summary-score">
+                <h3 class="score">92<span>/100</span></h3>
+              </div>
+            </div>
+    
+            <div class="sub-container verbal">
+              <div class="summary-title">
+                <img class="icons" src="./assets/images/icon-verbal.svg" alt="verbal-icon">
+                <h3 class="points">Verbal</h3>
+              </div>
+              <div class="summary-score">
+                <h3 class="score">61<span>/100</span></h3>
+              </div>
+            </div>
+    
+            <div class="sub-container visual">
+              <div class="summary-title">
+                <img class="icons" src="./assets/images/icon-visual.svg" alt="visual-icon">
+                <h3 class="points">Visual</h3>
+              </div>
+              <div class="summary-score">
+                <h3 class="score">72<span>/100</span></h3>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3 class="score">80<span>/100</span></h3>
-          </div>
+          <button type="submit" class="btn">
+            Continue
+          </button>
         </div>
-
-        <div class="sub-container memory">
-          <div>
-            <img class="icons" src="./assets/images/icon-memory.svg" alt="memory-icon">
-            <h3 class="points">Memory</h3>
-          </div>
-          <div>
-            <h3 class="score">92<span>/100</span></h3>
-          </div>
-        </div>
-
-        <div class="sub-container verbal">
-          <div>
-            <img class="icons" src="./assets/images/icon-verbal.svg" alt="verbal-icon">
-            <h3 class="points">Verbal</h3>
-          </div>
-          <div>
-            <h3 class="score">61<span>/100</span></h3>
-          </div>
-        </div>
-
-        <div class="sub-container visual">
-          <div>
-            <img class="icons" src="./assets/images/icon-visual.svg" alt="visual-icon">
-            <h3 class="points">Visual</h3>
-          </div>
-          <div>
-            <h3 class="score">72<span>/100</span></h3>
-          </div>
-        </div>
-
-        <button type="submit">
-          <h3>Continue</h3>
-        </button>
+        
       </div>
     </div>
   </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/itsMoriss/results-summary-component">Moris MWai</a>.
   </div>
 </body>
 </html>

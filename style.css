@@ -11,12 +11,11 @@
 }
 
 body {
-    font-size: 1rem;
+    background: hsl(0, 0%, 100%);
     font-family: 'Hanken Grotesk', sans-serif;
     height: 100vh;
-    width: 100vw;
-    position: relative;
     text-align: center;
+    position: relative;
   }
 
 main {
@@ -24,32 +23,32 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
   }
 
   .container {
     box-shadow: 0px 3px 6px lightgrey;
-    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    max-width: 500px;
+    margin-top: 8%;
+    background: hsl(0, 0%, 100%);
   }
 
   .result-container {
-    float: left;
-    width: 40%;
+    border-radius: 20px;
+    width: 250px;
     text-align: center;
+    display: inline-block;
+    height: auto;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: white;
     padding: 30px;
     border-radius: 20px;
-    position: absolute;
-    vertical-align: middle;
   }
 
-  .result-container h2,
-  p {
-    color: hsl(241, 100%, 89%)
-  }
-
-  .result-container h2 {
+  .heading {
+    color: hsl(241, 100%, 89%);
+    padding: 1.4rem 0;
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
@@ -68,48 +67,74 @@ main {
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     height: 150px;
     width: 150px;
-    text-align: center;
-    vertical-align: middle;
-    margin-left: 112px;
-    margin-bottom: 15px;
+    margin: auto;
+    padding: 1rem;
     border-radius: 50%;
   }
 
   
-  .circle h1, :past {
-    margin: 0;
+  .percentage {
+    font-size: 3.5rem;
+    padding-top: .9rem;
   }
 
-  .circle h1 {
-    font-size: 3.5rem;
+  .small {
+    font-size: 1rem;
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+  }
+
+  .comment-wrapper {
+    margin-top: 1rem;
+  }
+
+.comment {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+  }
+
+.comment-summary {
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+    color: hsl(241, 100%, 89%);
   }
 
   .summary-container {
     float: right;
-    width: 40%;
+    border-radius: 20px;
+    width: 250px;
+    padding: 1.2rem 1.3rem;
+    height: auto;
     background-color: hsl(0, 0%, 100%);
     padding: 30px;
     border-top-right-radius: 20px;
     border-bottom-right-radius : 20px;
   }
 
-  .summary-container h2{
+  .title {
     color: hsl(224, 30%, 27%);
     font-size: 1.2rem;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
+  }
+
+  .summary-title {
+    font-size: .6rem;
+    display: inline-block;
   }
 
   .sub-container {
-    margin-bottom: 12px;    
+    margin-bottom: 1.4rem;
+    padding: .5rem;
     border-radius: 6px;
     position: relative;
   }
 
-  .summary-container h3 {
+  /*.summary-container h3 {
     padding: 10px;
     margin : 0;
-    font-size : 0.9rem
-  }
+    font-size : 0.9rem;
+  } */
 
   .reaction {
     color:  hsl(0, 100%, 67%);
@@ -141,11 +166,19 @@ main {
   .points {
     display: inline;
     position: absolute;
-    left: 30px;
+    left: 40px;
+    margin: auto;
+    top: 10px;
   }
 
   .score {
     color : hsl(224, 30%, 27%);
+    float: right;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: .9rem;
+    
   }
 
   span{
@@ -156,10 +189,14 @@ main {
     margin-top: 18px;
     color : hsl(0, 0%, 100%);
     background-color: hsl(224, 30%, 27%);
-    width: 280px;
     font-family: 'Hanken Grotesk', sans-serif;
     border-radius : 20px;
     border: none;
+    width: 100%;
+    padding: .6rem;
+    font-weight: 700;
+    transition: .3s all ease;
+    cursor: pointer
   }
 
   button:hover{
@@ -170,9 +207,13 @@ main {
   .attribution {
     font-size: 11px;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
   }
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
   }
 

@@ -246,12 +246,13 @@ main {
     .icons {
       top: 5px;
     }
+    
 
     button {
       padding: 5px;
     }
 
-    footer {
+    .attribution {
       display: none;
     }
   }
